@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "summarize"
+version = "0.1.0"
+description = ""
+authors = ["Thanassis Avgerinos <thanassis.avgerinos@gmail.com>"]
+readme = "README.md"
+packages = [{include = "summarize"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.3.0"
+langchain-openai = "^0.2.0"
+langchain-community = "^0.3.0"
+
+
+[tool.poetry.scripts]
+summarize = "summarize.main:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
